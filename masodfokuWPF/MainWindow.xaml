@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:masodfokuWPF"
         mc:Ignorable="d"
-        Title="Másodfokú egyenlet" Height="450" Width="400"
+        Title="Másodfokú egyenlet" MinHeight="450"
+        MaxHeight="450" MaxWidth="400" MinWidth="400"
         WindowStartupLocation="CenterScreen"
-        BorderBrush="Gray"
+        BorderBrush="#FF3D3D3D"
         BorderThickness="3">
     <StackPanel Orientation="Vertical"
                 Margin="10">
@@ -44,11 +45,25 @@
                      Margin="40 0 0 0"/>
         </StackPanel>
 
-
-
-
-
-
+        <Button Name="btn_szamol"
+                Height="30"
+                Content="Számol"
+                FontSize="15"
+                FontWeight="DemiBold"
+                Foreground="White"
+                Background="#FF3D3D3D"
+                Margin="0 20 0 20"
+                Width="350" Click="btn_szamol_Click"/>
+        <TextBlock Name="tbl_eredmeny"
+                   Text="Két valós gyök:"
+                   FontSize="15"
+                   FontWeight="Bold"/>
+        <ListBox Name="lb_eredmeny"
+                 FontSize="15"
+                 Width="350"
+                 Height="150"
+                 Margin="0 5 0 0"/>
+        
 
     </StackPanel>
 </Window>
