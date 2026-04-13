@@ -20,7 +20,8 @@
             <TextBox Name="tbx_a"
                      Height="30"
                      Width="290"
-                     Margin="40 0 0 0"/>
+                     Margin="40 0 0 0"
+                     VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal"
@@ -31,7 +32,8 @@
             <TextBox Name="tbx_b"
                      Height="30"
                      Width="290"
-                     Margin="38 0 0 0"/>
+                     Margin="38 0 0 0"
+                     VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal"
@@ -42,7 +44,8 @@
             <TextBox Name="tbx_c"
                      Height="30"
                      Width="290"
-                     Margin="40 0 0 0"/>
+                     Margin="40 0 0 0"
+                     VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <Button Name="btn_szamol"
@@ -53,7 +56,8 @@
                 Foreground="White"
                 Background="#FF3D3D3D"
                 Margin="0 20 0 20"
-                Width="350" Click="btn_szamol_Click"/>
+                Width="350" Click="btn_szamol_Click"
+                IsDefault="True"/>
         <TextBlock Name="tbl_eredmeny"
                    Text="Két valós gyök:"
                    FontSize="15"

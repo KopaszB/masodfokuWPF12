@@ -52,6 +52,29 @@ namespace masodfokuWPF
                 double x = -b / (2 * a);
                 tbl_eredmeny.Text = $"Egy valós gyök: x={x:f2}";
             }
+            listBoxFeltolt();
+        }
+
+        private void listBoxFeltolt()
+        {
+            double a = int.Parse(tbx_a.Text);
+            double b = int.Parse(tbx_b.Text);
+            double c = int.Parse(tbx_c.Text);
+            string eredmeny = $"{a}x² {elojel(b)} {Math.Abs(b)}x {elojel(c)} {Math.Abs(c)} = 0 -→ ";
+            lb_eredmeny.Items.Clear();
+            lb_eredmeny.Items.Add(eredmeny);
+        }
+
+        private string elojel(double szam)
+        {
+            if (szam>=0)
+            {
+                return "+";
+            }
+            else
+            {
+                return "-";
+            }
         }
 
         private bool szamE(string szam)
